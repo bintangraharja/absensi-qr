@@ -6,5 +6,10 @@
 	<title>Scan QrCode</title>
 </head>
 <body>
-	<h1>HALO TAMU, <?=$tamu;?></h1>
+	<h1>HALO TAMU</h1>
+	<p>Nama : Bintang</p>
+	<p>PNumber: 00000000</p>
+	<p>OPO MANENG</p>
+<!--	update status -->
+	<a href="<?=base_url();?>"><button>Hadir</button></a>
 </body>

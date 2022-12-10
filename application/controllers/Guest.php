@@ -3,16 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Guest extends CI_Controller {
 
+	function _remap($param) {
+		$this->index($param);
+	}
 
-	public function index(){
-		if ($this->uri->segment(1) === FALSE)
-		{
-			show_404();
-		}
-		else
-		{
-			$data['tamu'] = $this->uri->segment(2);
-		}
+	function index($param){
+
+		$data['tamu'] = $param;
 		$data['title'] = "Absensi QR";
 
 		$this->load->view('guest' , $data);
