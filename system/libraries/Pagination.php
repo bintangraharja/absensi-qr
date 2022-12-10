@@ -564,7 +564,7 @@ class CI_Pagination {
 		// And here we go...
 		$output = '';
 
-		// Render the "First" link.
+		// Admin the "First" link.
 		if ($this->first_link !== FALSE && $this->cur_page > ($this->num_links + 1 + ! $this->num_links))
 		{
 			// Take the general parameters, and squeeze this pagination-page attr in for JS frameworks.
@@ -574,7 +574,7 @@ class CI_Pagination {
 				.$this->first_link.'</a>'.$this->first_tag_close;
 		}
 
-		// Render the "Previous" link.
+		// Admin the "Previous" link.
 		if ($this->prev_link !== FALSE && $this->cur_page !== 1)
 		{
 			$i = ($this->use_page_numbers) ? $uri_page_number - 1 : $uri_page_number - $this->per_page;
@@ -596,7 +596,7 @@ class CI_Pagination {
 
 		}
 
-		// Render the pages
+		// Admin the pages
 		if ($this->display_pages !== FALSE)
 		{
 			// Write the digit links
@@ -629,7 +629,7 @@ class CI_Pagination {
 			}
 		}
 
-		// Render the "next" link
+		// Admin the "next" link
 		if ($this->next_link !== FALSE && $this->cur_page < $num_pages)
 		{
 			$i = ($this->use_page_numbers) ? $this->cur_page + 1 : $this->cur_page * $this->per_page;
@@ -640,7 +640,7 @@ class CI_Pagination {
 				.$this->_attr_rel('next').'>'.$this->next_link.'</a>'.$this->next_tag_close;
 		}
 
-		// Render the "Last" link
+		// Admin the "Last" link
 		if ($this->last_link !== FALSE && ($this->cur_page + $this->num_links + ! $this->num_links) < $num_pages)
 		{
 			$i = ($this->use_page_numbers) ? $num_pages : ($num_pages * $this->per_page) - $this->per_page;

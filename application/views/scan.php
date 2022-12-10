@@ -68,8 +68,8 @@
  
                                 //hasil scan
                                 console.log(result.text)
-                                $("#hasilscan").val(result.text);
-                             
+                                // $("#hasilscan").val(result.text);
+							window.location.href = "<?=base_url('/guest/');?>"+result.text;
                                 if(codeReader){
                                     codeReader.reset()
                                 }
