@@ -1,9 +1,16 @@
-.thead-custom {
+/* home page */
+  .btnHome {
+    background-color: #850341 !important;
+    color: #fff;
+  }
+
+/* admin page */
+ .thead-custom {
     background-color: #550540;
     color: #fff;
-}
+ }
 
-.switch {
+ .switch {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -61,4 +68,15 @@
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+/* guest page */
+  .btnK {
+    background-color: #811C1C !important;
+    color: #fff;
+  }
+
+  .btnHadir {
+    background-color: #22752A !important;
+    color: #fff;
   }

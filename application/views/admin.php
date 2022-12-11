@@ -9,7 +9,12 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="text-center" style="color: #550540;">Guest Book</h1>
+		<div class="row justify-content-center" style="margin: 2% 0;">
+			<h1 class="text-center font-weight-bold" style="color: #550540;">Guest Book</h1>
+		</div>
+		<div class="row" style="margin-bottom: 2%;">
+			<a href="<?=base_url('home');?>"><button class="btn btn-dark btn-lg">Kembali</button></a>
+		</div>
 		<table class="table">
 			<thead class="thead-custom text-center">
 				<tr>
