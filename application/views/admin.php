@@ -28,15 +28,15 @@
 			</thead>
 			<tbody>
 			<?php
-				for($i = 100; $i < 250; $i++){
-					$kode = 'Quiz'.$i;
-					$name = "Bintang";
-					$email = "bintang@gmail.com";
-					$phone = "08980444007";
-					$status = FALSE;
+				foreach($guests as $guest){
+					$kode = $guest['ID'];
+					$name = $guest['FullName'];
+					$email = $guest['Email'];
+					$phone = $guest['PNum'];
+					$status = $guest['Stat'];
 			?>
 				<tr class="text-center">
-					<td><?=$i;?></td>
+					<td><?=$kode;?></td>
 					<td><?=$name;?></td>
 					<td><?=$email;?></td>
 					<td><?=$phone;?></td>
